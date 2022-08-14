@@ -20,7 +20,7 @@
                     <img src="logo.jpeg" alt="Harbour Stitch logo" width="120px">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
@@ -29,21 +29,25 @@
                     </ul>
                 </nav>
                 <img src="cart.png" alt="cart icon" width="30px" height="30px">
+                <img src="menu.png" alt="dropdown icon" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
                     <h1>Build for comfort!</h1>
-                    <p>An one-stop store for customised gift.</p>
+                    <p>An one-stop store for customised shirts</p>
+                    
+                    <p>Badges,Stickers and more.</p>
                     <br>
                     <a href="" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2">
-                    <img src="fabio-alves-eAUE_FmclYE-unsplash.jpg" alt="xx" height="70%">
+                    <img src="splash.png" alt="xx" height="70%">
                 </div>
             </div>
         </div>
     </div>
     <!--  featured categories-->
+    <div class="header2">
     <div class="categories">
         <div class="small-container">
             <div class="row">
@@ -54,37 +58,42 @@
                     <img src="badge1.jpeg" alt="" height="275px">
                 </div>
                 <div class="col-3">
-                    <img src="sticker1.jpeg" alt="">
+                    <img src="sticker1.jpeg" alt="" height="275px">
                 </div>
-
+                <div class="col-3">
+                    <img src="category-3.jpg" alt="" height="275px">
+                </div>
+            </div>
             </div>
         </div>
     </div>
+    </body>
     <!-- featured product -->
+    <div class="header1">
     <div class="small-container">
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="model_back.jpeg" alt="">
+                <img src="model_back.jpeg" alt="" height="275px">
                 <h4>customised Tshirt</h4>
                 <div class="rating"></div>
                 <p>Rs. 699</p>
             </div>
             <div class="col-4">
-                <img src="badge3.jpeg" alt="" height="274px" >
+                <img src="badge2.jpeg" alt="" height="270px" >
                 <h4>customised Badges</h4>
-                <div class="rating"></div>
+                <!-- <div class="rating"></div> -->
                 <p>Rs. 69</p>
             </div>
             <div class="col-4">
-                <img src="sticker collage.jpeg" alt="" >
+                <img src="sticker collage.jpeg" alt="" height="275px" >
                 <h4>customised stickers</h4>
                 <div class="rating"></div>
                 <p>Rs. 30</p>
             </div>
 
             <div class="col-4">
-                <img src="aot poster.jpeg" alt="">
+                <img src="aot poster.jpeg" alt="" height="275px">
                 <h4>Bulk orders</h4>
                 <div class="rating"></div>
                 <p>Rs. ***</p>
@@ -92,6 +101,84 @@
 
         </div>
     </div>
+</div>
+    <!-- testimonial -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <p >&#x201C;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid vitae soluta.&#x201D;</p>
+                    <img src="user-1.png" alt="">
+                    <h3>Anindya Roy</h3>
+                </div>
+                <div class="col-3">
+                    <p>&#x201D;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid vitae soluta.&#x201D;</p>
+                    <img src="user-3.png" alt="">
+                    <h3>Anindya Sen</h3>
+                </div>
+                <div class="col-3">
+                    <p>&#x201D;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid vitae soluta.&#x201D;</p>
+                    <img src="user-2.png" alt="">
+                    <h3>Miraj Mondal</h3>
+                    </div>
+                    <div class="col-3">
+                    <p>&#x201D;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aliquid vitae soluta.&#x201D;</p>
+                    <img src="user-3.png" alt="">
+                    <h3>Anindya Sen</h3>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="logo.jpeg" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo nobis doloremque eius error cumque perspiciatis ipsa necessitatibus!</p> 
+                </div>
+
+                <div class="footer-col-3">
+<h3>Useful Links</h3>
+<ul>
+    <li>coupons</li>
+    <li>Blog post</li>
+    <li>Return policy</li>
+    <li>Community</li>
+</ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                      
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">&#x24B8; Copyright 2022-Harbour Stitch</p>
+        </div>
+    </div>
+    <!-- js for comment menu -->
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight= "0px";
+        function menutoggle(){
+            if( MenuItems.style.maxHeight== "0px")
+            {
+                MenuItems.style.maxHeight= "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight= "0px";
+            }
+        }
+    </script>
 </body>
 
 </html>
